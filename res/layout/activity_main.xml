@@ -1,0 +1,85 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text="请提取官方刷机包中的NON-HLOS.bin,recovery.img文件，2.3的放在SD卡中的 mipatcher/baseband/2.3文件夹中，4.0的放在mipatcher/baseband/4.0中"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textView1"
+        android:layout_marginTop="14dp"
+        android:onClick="myclick"
+        android:text="切换MIUI2.3基带"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/button1"
+        android:onClick="myclick"
+        android:text="切换MIUI4.0基带"
+        android:visibility="gone" />
+
+    <ProgressBar
+        android:id="@+id/progressBar1"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/progressBar1"
+        android:layout_marginTop="18dp"
+        android:onClick="myclick"
+        android:text="补丁更新器"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:text="Tobby QQ:123613608" />
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="match_parent"
+        android:textSize="15dp"
+        android:layout_height="100dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="48dp"
+        android:onClick="myclick"
+        android:text="温柔切换系统  \n(需ROOT，并把程序放到/system/app中)" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:textSize="15dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:onClick="myclick"
+        android:text="暴力切换系统  \n(只需ROOT)" />
+
+</RelativeLayout>
